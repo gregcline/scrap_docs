@@ -1,0 +1,25 @@
+/* This file is for your main application css. */
+
+@import "./phoenix.css";
+@import "../../deps/phoenix_live_view/assets/css/live_view.css";
+@import "../node_modules/codemirror/lib/codemirror.css";
+@import "../node_modules/codemirror/theme/material.css";
+
+.container {
+  max-width: 100%;
+}
+
+.content {
+  width: 97%;
+  display: grid;
+  grid-template-columns: [editor-column] 45% [space] 3% [output-column] 45%;
+}
+
+.editor, .output {
+  height: 100%;
+  width: 100%;
+  padding: .5em;
+  border: 1px solid rgba(0, 0, 0, .6)
+}
+
+

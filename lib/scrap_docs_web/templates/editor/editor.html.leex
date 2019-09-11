@@ -1,0 +1,8 @@
+<div>Connected users: <%= @user_count %></div>
+<div class="content">
+  <input id="cursor" type="hidden" value="<%= @cursor %>">
+  <div id="content" hidden><%= @content %></div>
+  <textarea type="text" phx-hook="Editor"></textarea>
+  <div></div>
+  <div class="output"><%= raw(@output) %></div>
+</div>
